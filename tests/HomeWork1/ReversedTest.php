@@ -2,17 +2,17 @@
 
 namespace Tests\Day1;
 
-use HomeWork1\Reversed;
+use HomeWork1\Revers;
 use PHPUnit\Framework\TestCase;
 
 class ReversedTest extends TestCase
 {
-    /** @var Reversed */
+    /** @var Revers */
     private $reverse;
 
     public function setUp()
     {
-        $this->reverse = new Reversed();
+        $this->reverse = new Revers();
     }
 
     public function test_it_reverse_world()
