@@ -9,8 +9,7 @@ function getSecond($arr)
         unset($arr[$i]);
     }
     $maxNumber = max($arr);
-    print_r($maxNumber);
     return $maxNumber;
 }
 
-getSecond($arr = [3, 4, 2, 4, 5, 5]);
+echo(getSecond($arr = [3, 4, 2, 4, 5, 5]));

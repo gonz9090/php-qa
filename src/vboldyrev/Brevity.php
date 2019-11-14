@@ -2,13 +2,13 @@
 
 namespace vboldyrev;
 
-    function FIO($FullName)
+    function FIO(string $FullName)
     {
         // Так же можно разбирать стрингами.
-        $fio = preg_replace('/(\s[А-ЯЁ])[а-яё]+/u','$1.',"$FullName");
-        print_r($fio);
+        $fio = preg_replace('/(\s[А-ЯЁ])[а-яё]+/u','$1.', $FullName);
+        return $fio;
     }
 
-    FIO('Сомов Игорь Андреевич');
+    print_r(FIO('Сомов Игорь Андреевич'));
 
 

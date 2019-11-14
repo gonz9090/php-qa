@@ -4,8 +4,7 @@ namespace vboldyrev;
 
 function test_count($numbers, $cifra)
 {
-    $stringNumbers = strval($numbers);
-    $arr = str_split($stringNumbers);
+    $arr = str_split($numbers);
     $count = 0;
     foreach ($arr as $char) {
         if ($char == $cifra) {
@@ -15,4 +14,4 @@ function test_count($numbers, $cifra)
     return $count;
 }
 
-    print_r(test_count($numbers = 442158755745, $cifra = 4));
+    print_r(test_count( 442158755745, $cifra = 4));

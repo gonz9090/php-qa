@@ -3,23 +3,22 @@
 namespace vboldyrev;
 
 function Fizzbuzz($number){
+    $result = $number;
     if ($number % 3 == 0 && $number % 5 == 0 ) {
-        var_dump ('fizzbuzz');
+        $result = 'fizzbuzz';
     }
     elseif ($number % 5 == 0 ) {
-        var_dump ('buzz');
+        $result = 'buzz';
     }
     elseif ($number % 3 == 0 ) {
-        var_dump ('fizz');
+        $result = 'fizz';
     }
-    else {
-        var_dump ($number);
-    }
+    return $result;
 }
 
-    Fizzbuzz(1);
-    Fizzbuzz(2);
-    Fizzbuzz(3);
-    Fizzbuzz(5);
-    Fizzbuzz(9);
-    Fizzbuzz(15);
+    var_dump(Fizzbuzz(1));
+    var_dump(Fizzbuzz(2));
+    var_dump(Fizzbuzz(3));
+    var_dump(Fizzbuzz(5));
+    var_dump(Fizzbuzz(9));
+    var_dump(Fizzbuzz(15));

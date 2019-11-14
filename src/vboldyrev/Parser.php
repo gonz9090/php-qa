@@ -7,16 +7,16 @@ namespace vboldyrev;
     function getLinks($text)
     {
         preg_match_all('#(?:https?|ftp)://[^\s\,]+#i', $text, $array);
-        print_r($array);
+        return $array;
     }
 
-    getLinks($string);
+    print_r(getLinks($string));
 
     function getPhone($text)
     {
         $pattern = '([78\+\(](?:[-()]*[0-9 ]){5,15})';
         preg_match($pattern, $text, $number);
-        print_r($number);
+        return $number;
     }
 
-    getPhone($string);
+    print_r(getPhone($string));
